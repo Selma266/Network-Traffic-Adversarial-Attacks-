@@ -10,7 +10,7 @@ These attacks are typically designed for differentiable models (deep learning), 
 We focus on realistic attack scenarios, including: Black-box evasion attacks and Transfer-based attacks.
 
 
-To further enforce realistic adversarial conditions, we integrate the TCGE (Tabular Constraint Guaranteed Evasion) algorithm. TCGE is specifically designed for tabular and constrained domains, ensuring that generated adversarial examples remain valid and realistic by respecting domain constraints (e.g., feature dependencies and logical relationships)
+To further enforce realistic adversarial conditions, we integrate the** TCGE (Tabular Constraint Guaranteed Evasion) algorithm **. TCGE is specifically designed for tabular and constrained domains, ensuring that generated adversarial examples remain valid and realistic by respecting domain constraints (e.g., feature dependencies and logical relationships)
 
 ### 📌Models Implemented
 Machine Learning Models: Logistic Regression, Random Forest, XGBoost, LightGBM.
