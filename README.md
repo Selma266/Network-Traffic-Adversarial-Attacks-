@@ -10,7 +10,7 @@ These attacks are typically designed for differentiable models (deep learning), 
 We focus on realistic attack scenarios, including: Black-box evasion attacks and Transfer-based attacks.
 
 
-To further enforce realistic adversarial conditions, we integrate the** TCGE (Tabular Constraint Guaranteed Evasion) algorithm **. TCGE is specifically designed for tabular and constrained domains, ensuring that generated adversarial examples remain valid and realistic by respecting domain constraints (e.g., feature dependencies and logical relationships)
+To further enforce realistic adversarial conditions, we integrate the **TCGE (Tabular Constraint Guaranteed Evasion) algorithm**. TCGE is specifically designed for tabular and constrained domains, ensuring that generated adversarial examples remain valid and realistic by respecting domain constraints (e.g., feature dependencies and logical relationships)
 
 ### 📌Models Implemented
 Machine Learning Models: Logistic Regression, Random Forest, XGBoost, LightGBM.
@@ -23,15 +23,15 @@ To improve robustness against adversarial attacks, we apply Adversarial Training
 ### 📊 Experimental Scenarios
 To comprehensively evaluate the robustness of the proposed models, we design five experimental scenarios, each reflecting a different security setting:
 
-🔹 S1: Baseline Performance
+🔹 **S1: Baseline Performance**
 
 In this scenario, models are trained and tested on clean (non-adversarial) network traffic data. This serves as a reference to compare the performance of different models under normal conditions.
 
-🔹 S2: Adversarial Attack Evaluation
+🔹 **S2: Adversarial Attack Evaluation**
 
 Here, trained models are directly exposed to adversarial examples generated using: FGSM and PGD. This scenario evaluates the vulnerability of each model to adversarial evasion attacks.
 
-🔹 S3: Adversarial Training on Seen Attacks
+🔹 **S3: Adversarial Training on Seen Attacks**
 
 Models are trained and tested on the same type of adversarial attack: 
 
@@ -40,7 +40,7 @@ Train on PGD → Test on PGD
 
 This scenario measures how well models can defend against attacks they have already seen during training.
 
-🔹 S4: Cross-Attack Generalization
+🔹 **S4: Cross-Attack Generalization**
 
 Models are trained on one type of attack and tested on another:
 
@@ -49,7 +49,7 @@ Train on PGD → Test on FGSM
 
 This evaluates the model’s ability to generalize defenses across different attack types.
 
-🔹 S5: Mixed Adversarial Training
+🔹 **S5: Mixed Adversarial Training**
 
 Models are trained on a combination of clean and adversarial data (FGSM + PGD), and then evaluated on clean test data.
 
